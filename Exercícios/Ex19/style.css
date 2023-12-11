@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* 
+    id em HTML = # em CSS
+    class em HTML = . em CSS
+    id unico, class pode ser unica (varios elementos)
+*/
+
+body {
+    background-color: #5485F0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+h1 {
+    color: #8D46F5;
+}
+h2 {
+    color: blue;
+}
+h1#p1 {
+    color: rgba(229, 255, 0, 0.781);
+    text-align: center;
+}
+.basico{
+    color:#6B42F5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.inter{
+    color: #54E8F0;
+}
