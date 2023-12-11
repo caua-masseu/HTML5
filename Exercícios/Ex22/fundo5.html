@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo com imagem Teste</title>
     <style>
         body{
             height: 100vh;
@@ -12,6 +12,11 @@
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            /* Short Hand na ordem acima */
+            
+            background: black url(imagens/wallpaper002.jpg) center top no-repeat  fixed ;
+            background-size: cover;
         }
         main{
             background-color: white;
@@ -19,13 +24,16 @@
             margin: auto;
             padding: 10px;
             border-radius: 10px;
+            max-width: 600px;
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de Imagen no Fundo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit facilis vitae ratione libero dolorem repellendus qui reiciendis voluptate cum iure expedita praesentium cupiditate numquam accusamus, officiis ducimus ex, dicta illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quia quos omnis, maiores porro cum magnam beatae architecto non nesciunt quae minima consequatur, doloremque voluptatibus vel quisquam ea ex earum.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit facilis vitae ratione libero dolorem repellendus qui reiciendis voluptate cum iure expedita praesentium cupiditate numquam accusamus, officiis ducimus ex, dicta illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quia quos omnis, maiores porro cum magnam beatae architecto non nesciunt quae minima consequatur, doloremque voluptatibus vel quisquam ea ex earum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minus harum nesciunt laborum quas quo est quibusdam excepturi laudantium repudiandae quam id rerum, eum error officiis et nisi aut nihil?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, saepe quaerat cum similique excepturi doloribus aspernatur totam sint neque officiis beatae. Repellat, hic explicabo. Laboriosam voluptatibus est sapiente hic sed.lo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur vitae rerum rem architecto, obcaecati autem modi porro officiis alias totam error libero corrupti ad assumenda sunt et vero, nam amet.
+        </p>
     </main>
 </body>
 </html>
