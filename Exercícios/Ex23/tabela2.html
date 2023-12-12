@@ -6,32 +6,72 @@
     <title>Tabelas Grandes</title>
     <style>
         table{
-            width: 500px;
+            height: 100vh;
+            border-collapse: collapse;
+            position: relative;
         }
-        td{
+        td, th{
             border: 1px solid black;
+            padding: 10px;
+        }
+        thead{
+            background-color: rgb(59, 59, 59);
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top:0%;
+            background-color: rgb(59, 59, 59);
+        }
+       .number{
+            text-align: right;
+            width: 100px;
+        }
+        caption{
+            font-size: 1.5em;
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgb(228, 222, 222);
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(90, 86, 86);
+            color: white;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas Grandes</h1>
 <table>
+    <caption>
+        População das Unidades Federativas do Brasil
+    </caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <Th>populacao</Th>
+            <th scope="col">Estado</th>
+            <Th scope="col">População</Th>
         </tr>
     </thead>
     <tbody>
         <tr>
-        <td>sao paulo</td>
-        <td> 45 919 049</td>
+        <td>São Paulo</td>
+        <td class="number"> 45 919 049 </td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="number"> 21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="number"> 17 264 943</td>
         </tr>
     </tbody>
     <tfoot>
-
+        <tr>
+            <th scope="row">Total de habitantes</th>
+            <td>xxx</td>
+        </tr>
     </tfoot>
 </table>
-
+<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam velit dignissimos commodi harum, nesciunt in blanditiis qui praesentium ab quidem quod obcaecati aperiam, accusantium, provident ad est porro quas illo!Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, officiis qui ullam earum ratione ipsa fugit atque cumque porro odit dolore, pariatur, facilis doloremque possimus molestias blanditiis laudantium saepe itaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta tenetur, temporibus laboriosam animi eaque eum voluptates accusamus. Nam alias magnam, officiis rem reiciendis vero ipsa autem obcaecati odio minus. Fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque in aspernatur, eligendi aliquid recusandae nihil? Tenetur quis quod asperiores cum, molestiae, reiciendis sequi, delectus debitis voluptatum eveniet tempora nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, facilis omnis corrupti ex, quam amet tenetur culpa architecto maxime veniam officia, minus sapiente cupiditate porro animi fuga voluptatum numquam vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloribus mollitia molestiae velit possimus accusamus? Velit fugit eos, aperiam doloribus tempora molestias explicabo similique quis, eaque nihil fugiat iure laborum! </p>
 </body>
 </html>
